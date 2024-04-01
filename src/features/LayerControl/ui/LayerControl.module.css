@@ -1,0 +1,57 @@
+.LayerControl {
+    position: relative;
+}
+
+.LayerControlWrapper {
+    top: 60px;
+    position: absolute;
+    padding: 10px;
+    background: transparent;
+    z-index: 2;
+}
+
+.layerSelect {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.layerSelectedIcon {
+    padding: 4px;
+    height: min-content;
+    align-items: center;
+    display: flex;
+    background-color: var(--bg-400);
+    border-radius: 2px;
+}
+
+.layerSelectedIcon svg{
+    width: 18px;
+    height: 18px;
+}
+.layerSelectedText {
+    color: var(--text-color-400);
+    font-size: 14px;
+}
+
+.LayerControlList {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: var(--grey-300);
+    border-radius: 6px;
+    gap: 12px;
+    height: 0;
+    visibility: hidden;
+    width: 0;
+    padding: 0
+}
+
+.LayerControlListShown {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    width: fit-content;
+    padding: 10px;
+}

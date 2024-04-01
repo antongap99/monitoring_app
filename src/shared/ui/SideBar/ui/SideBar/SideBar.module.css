@@ -1,0 +1,54 @@
+.SideBar{
+  height: calc(100vh - var(--header-height));
+  width: var(--sidebar-width);
+  background: #ffffff;
+  transition: width 0.2s ease-in-out;
+  position: relative;
+  z-index: 5;
+  border-right: 1px solid var(--border-grey);
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+
+
+.switchers {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.collapsed .switchers {
+  flex-direction: column;
+}
+
+.collapseBtn {
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: #ffffff;
+  color: var(--grey-400);
+  padding: 0;
+  border-radius: 6px;
+  max-height: 24px;
+  cursor: pointer;
+}
+
+.SideBarContent {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  padding: 16px;
+}
+
+.SideBarContent.SideBarContentHide {
+  opacity: 0;
+  visibility: hidden;
+}

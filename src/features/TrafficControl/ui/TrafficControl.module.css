@@ -1,0 +1,33 @@
+
+
+.trafficControlWrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    padding: 10px;
+}
+
+.trafficControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.trafficControl , .trafficControl * {
+    cursor: pointer;
+}
+
+
+.TrafficCheckBox {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.trafficIcon svg {
+    width: 18px;
+    height: 18px;
+}

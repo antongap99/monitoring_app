@@ -1,0 +1,17 @@
+@import "reset.css";
+@import "global.css";
+@import "variables/variables.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+
+.page-wrapper {
+  flex-grow: 1;
+}
+
+.content-page {
+  display: flex;
+}

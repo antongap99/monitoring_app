@@ -1,0 +1,16 @@
+.Header {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-grey);
+    height:  var(--header-height);
+}
+
+.HeaderLogo {
+    padding: 0;
+}
+
+
+.HeaderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
